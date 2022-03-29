@@ -17,7 +17,7 @@ print(secret_bits)
 secret_message = [chr(int(secret_bits[i], 2)) for i in range(len(secret_bits))]
 secret_message = ''.join(secret_message)
 
-stop_indicator = "$Saro-End-File$"
+stop_indicator = "$Saro-End-File$" #Pin or the end of message
 
 if stop_indicator in secret_message:
     print(secret_message[:secret_message.index(stop_indicator)])
